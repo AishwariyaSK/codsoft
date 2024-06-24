@@ -1,0 +1,123 @@
+/* common */
+*{
+    margin:0px;
+    padding:0px;
+}
+section
+{
+    padding:20px;
+}
+body{
+    background-color: rgba(127, 255, 212, 0.6);
+}
+/* header */
+
+.header-container{
+    background-image: url("assets/image.png");
+    background-size: 100% 100%;    
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+}
+
+/* header-navbar */
+.navbar{
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.navbar-container{
+    padding: 10px 20px 10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.company{
+    padding: 10px;
+}
+.nav-item{
+    display:inline;
+    padding: 10px;
+}
+.searchbar{
+    padding: 10px 40px 10px 40px;
+    display:flex;
+    flex-grow:1;
+}
+.searchbox{
+    padding: 4px;
+    width:100%;
+}
+.nav-item:hover{
+    background-color:rgba(242, 251, 248, 0.3) ;
+    cursor: pointer; 
+}
+
+/* header-about */
+.about{
+    padding: 10%;
+}
+.about-container{
+    padding:40px;
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.abt-head, .abt-text{
+    text-align: center;
+}
+.abt-text{
+    font-size: 20px;
+}
+
+/* trending, nature */
+
+:root {
+    --row-gutter: 20px;
+    --column-gutter:20px;
+    --columns:3;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-column-gap:var(--column-gutter);
+    row-gap: var(--row-gutter);
+    column-gap: var(--row-gutter);
+    align-items: start;
+    grid-template-columns: repeat(var(--columns),minmax(0,1fr));
+
+}
+
+.grid-item {
+    background-color:  rgba(127, 255, 212, 0.9);
+    padding: 8px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    align-items: center;
+}
+.grid-img{
+    height:200px;
+    width:100%;
+}
+.grid-item:hover{
+    transform: scale(1.05) ;
+    transition: .2s;
+    cursor: zoom-in;   
+}
+
+
+
+/* footer */
+
+.footer-container{
+    padding:20px;
+    background-color: aquamarine;
+}
+.footer-list,.flist-item{
+    display: inline-block;
+    padding:20px;
+    font-size:20px;
+}
+.flist-item:hover{
+    opacity: 0.5;
+
+}
+
+
+
